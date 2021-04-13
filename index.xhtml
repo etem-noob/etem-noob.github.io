@@ -1,5 +1,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tr" lang="tr">
 <head>
+    <meta charset="utf-8">
+<style>
+input[type="button"]{
+width: 200px;
+height: 200px;
+border:none;
+font-size:3em;
+background: #FF6766;
+color:#E7E7E7;
+}
+ 
+</style>
     <title>SEMENDER YAZILIMCI-ANA SAYFA</title>
 </head>
 <body bgcolor="F0FFF0">
@@ -15,7 +27,7 @@
         </td>
         <td rowspan="2" colspan="3" width="1300">
             <font size="4"><strong> 1-semender yazılımcı kimdir?</strong><br/> Etem TAŞKIN adında python web tasarım ve Arduino sistemlerine göniül vermiş bir kişidir <br/><strong> 2- Amacı nedir?</strong> <br/> Türkçe dil desteği olan kaynak sayısı olabildiğince az ve bu sorundan rahatsız olan kendisi gibi daha bir çok insan var o da bu sorunu çözmeyi hedefliyor ve hendi kaynağını oluşturuyor <br/><strong> 3- ne hakkında</strong> <br/> bu kaynaklar genel olarak yazılım-teknoloji ağırlıklı eğitimler olacak <br/> <strong>4- nasıl ve nerede</strong> <br/> bu sitede yazı formatında fotoğraf destekli eğitimler olacak video formatında tercih edenler için ise youtube üzerinden eğitim videoları yayınlanacak<br/><strong>5- peki ya ücret</strong><br/> bu sorun pek çok kişinin başını ağırtıyor genel olarak çünkü elimizdeki pek az kaynak da zaten ücretli peki o zaman ne yapalım? kendi kaynağımızı hem de tamamen <strong>ücretsiz</strong> olarak.</font>
-            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/hCPwme6SybM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></center>
+            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/hCPwme6SybM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></center> 
         </td>
     </tr>
     <tr>
@@ -24,6 +36,24 @@
         </td>
     </tr>
 </table>
+    <input type=button onclick="arttir()" value="+">
+<input type=button onclick="azalt()" value="-">
+<input type=button id="sonuc" value="0">
+ 
+<script>
+function arttir(){
+ 
+var sonuc=document.getElementById("sonuc");
+sonuc.value=Number(sonuc.value)+1;
+}
+ 
+function azalt(){
+ 
+var sonuc=document.getElementById("sonuc");
+sonuc.value=Number(sonuc.value)-1;
+}
+ 
+</script>
 
 
 </body>
